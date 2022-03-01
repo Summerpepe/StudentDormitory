@@ -1,0 +1,54 @@
+﻿@using Student_Hostel.Models;
+@*@model List<Student_Hostel.Models.Department>*@
+@model List<Dormitory> 
+ @*指明传递过来的数据类型*@
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <form method="post" action="Search">
+                <input type="text" name="SearchString" />
+                <input type="submit" value="Search" />
+            </form>
+        </nav>
+        <form>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>寝室号码:</th>
+                        <th>寝室人数</th>
+                        <th>寝室成员</th>
+                        <th>备注</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var depart in Model)
+                    {
+                        <tr>
+                            <td>@depart.Id</td>
+                            <td>@depart.DorName</td>
+                            <th>@depart.NumPeople</th>
+                            <th>@depart.PeopleName</th>
+                            <th>@depart.Remark</th>
+                            <td>
+                                <a href="/Dor/details/@depart.Id">查看</a>
+                                <a href="/Dor/edit/@depart.Id  ">编辑</a>
+                                <a href="/Dor/delete/@depart.Id" onclick="javascrip: return confirm('删除吗?')">删除</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a asp-controller="Dor" asp-action="index" asp-route-pageIndex="1">首页</a>
+            <a asp-controller="Dor" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+            <a asp-controller="Dor" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+            <a asp-controller="Dor" asp-action="index" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+            <div>
+
+                <label class="text-danger">@ViewBag.Msg </label>
+            </div>
+        </form>
+    </div>
+    </body>
+    

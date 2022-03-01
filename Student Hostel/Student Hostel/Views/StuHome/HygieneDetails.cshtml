@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+@model DormitoryHygieneModels
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/StuHome/AbsenceIndex">我的考勤</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/DorIndex">查看宿舍卫生</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍报修与查看</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddRepair">宿舍报修</a>
+                    <a class="dropdown-item" href="/StuHome/RepairIndex">报修查看</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">请假</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddLeave">请假</a>
+                    <a class="dropdown-item" href="/StuHome/MyLeave">我的请假</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">用户信息</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/StuDetails">查看用户</a>
+                    <a class="dropdown-item" href="/StuHome/StuEdit">修改密码</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout1">退出</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+<div class="container">
+    <h2>宿舍卫生信息</h2>
+    <div>
+        ID：@Model.Id
+    </div>
+    <div>
+        员工号：@Model.Code
+    </div>
+    <div>
+        检查时间：@Model.Time
+    </div>
+    <div>
+        寝室号：@Model.DormitoryName
+    </div>
+    <div>
+        评分：@Model.Remark
+    </div>
+    <a href="/StuHome/DorIndex">返回</a>
+</div>

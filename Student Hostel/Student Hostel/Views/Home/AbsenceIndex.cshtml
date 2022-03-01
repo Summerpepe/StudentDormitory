@@ -1,0 +1,50 @@
+﻿@model List<AbsenceDetailModels>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form method="post" action="AbsenceSearch">
+            <input type="text"  placeholder="Enter StudentCode" name="SearchString" />
+            <input type="submit" value="Search" />           
+        </form>
+    </nav>
+    <form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>寝室号</th>
+                    <th>晚归时间</th>
+                    <th>晚归原因</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model)
+                {
+                    <tr>
+                        <td>@student.Id</td>
+                        <td>@student.Code</td>
+                        <td>@student.Name</td>
+                        <th>@student.DormitoryName</th>
+                        <td>@student.Time</td>
+                        <td>@student.Remark</td>
+                        <td>
+                            <a href="/home/AbsenceDelete/@student.Id" onclick="javascrip: return confirm('已处理?')">删除</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <div>
+
+                <label class="text-danger">@ViewBag.Msg </label>
+            </div>
+        </table>
+        <a asp-controller="Home" asp-action="AbsenceIndex" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="Home" asp-action="AbsenceIndex" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="Home" asp-action="AbsenceIndex" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="Home" asp-action="AbsenceIndex" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+
+    </form>
+</div>
+

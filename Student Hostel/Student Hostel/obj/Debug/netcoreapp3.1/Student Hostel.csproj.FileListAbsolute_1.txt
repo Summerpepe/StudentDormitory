@@ -1,0 +1,160 @@
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csprojAssemblyReference.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.AssemblyInfoInputs.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.AssemblyInfo.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csproj.CoreCompileInputs.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.MvcApplicationPartsAssemblyInfo.cache
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\appsettings.Development.json
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\appsettings.json
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.exe
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.deps.json
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.runtimeconfig.json
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.runtimeconfig.dev.json
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.pdb
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\staticwebassets\Student Hostel.StaticWebAssets.Manifest.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\staticwebassets\Student Hostel.StaticWebAssets.xml
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\scopedcss\bundle\Student Hostel.styles.css
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorTargetAssemblyInfo.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.dll
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.pdb
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.genruntimeconfig.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorAssemblyInfo.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorAssemblyInfo.cs
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.Views.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.Views.pdb
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.TagHelpers.input.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.TagHelpers.output.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorCoreGenerate.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorTargetAssemblyInfo.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.Views.pdb
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csproj.CopyComplete
+G:\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\libman.json
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Add.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Dor\Add.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Dor\Index.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\appsettings.Development.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\appsettings.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\libman.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.exe
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.deps.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.runtimeconfig.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.runtimeconfig.dev.json
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.pdb
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.Views.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Student Hostel.Views.pdb
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csprojAssemblyReference.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.AssemblyInfoInputs.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.AssemblyInfo.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csproj.CoreCompileInputs.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.MvcApplicationPartsAssemblyInfo.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorAssemblyInfo.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorAssemblyInfo.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\staticwebassets\Student Hostel.StaticWebAssets.Manifest.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\staticwebassets\Student Hostel.StaticWebAssets.xml
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\scopedcss\bundle\Student Hostel.styles.css
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.TagHelpers.input.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.TagHelpers.output.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorCoreGenerate.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Dor\Add.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Dor\Index.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Add.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Details.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorTargetAssemblyInfo.cache
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.RazorTargetAssemblyInfo.cs
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.Views.pdb
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.csproj.CopyComplete
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.dll
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.pdb
+H:\ASP.NET\作业\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Student Hostel.genruntimeconfig.cache
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+G:\Student Hostel\Student Hostel\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs

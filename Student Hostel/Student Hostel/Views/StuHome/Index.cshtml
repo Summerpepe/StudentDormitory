@@ -1,0 +1,103 @@
+﻿@{
+    Layout = null;
+}
+@model StudentDetail
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/StuHome/AbsenceIndex">我的考勤</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/DorIndex">查看宿舍卫生</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍报修与查看</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddRepair">宿舍报修</a>
+                    <a class="dropdown-item" href="/StuHome/RepairIndex">报修查看</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">请假</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddLeave">请假</a>
+                    <a class="dropdown-item" href="/StuHome/MyLeave">我的请假</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">用户信息</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/StuDetails">查看用户</a>
+                    <a class="dropdown-item" href="/StuHome/StuEdit">修改密码</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout1">退出</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+<div class="container">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td colspan="3" align="center" width="380"><h2>学生信息</h2></td>
+                </tr>
+                <tr>
+                    <td rowspan="9" cellspacing="1px" align="center" width="260">
+                        @{
+                            var photoPath = "/images/" + @Model.PhotoPath;
+                        }
+                        <img src="@photoPath" width="240" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" width="120" height="40">学号:</td>
+                    <td width="120">@Model.Code</td>
+                </tr>
+                <tr>
+                    <td align="right">姓名:</td>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <td align="right">性别:</td>
+                    <td>@Model.Sex</td>
+                </tr>
+                <tr>
+                    <td align="right">寝室号:</td>
+                    <td>@Model.DormitoryName</td>
+                </tr>
+                <tr>
+                    <td align="right">出生日期:</td>
+                    <td>@Model.Birth</td>
+                </tr>
+                <tr>
+                    <td align="right">电话:</td>
+                    <td>@Model.Phone</td>
+                </tr>
+                <tr>
+                    <td align="right">学院:</td>
+                    <td>@Model.DepartmentName</td>
+                </tr>
+                <tr>
+                    <td align="right">备注:</td>
+                    <td>@Model.Remark</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

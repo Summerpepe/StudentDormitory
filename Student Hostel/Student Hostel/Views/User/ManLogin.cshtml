@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+@model SysUser
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <div>
+                <div>
+                    <label>用户名:</label>
+                    <input type="text" name="name" value="@Model.Name" />
+                </div>
+                <div>
+                    <label>密码</label>
+                    <input type="text" name="pwd" value="@Model.Pwd" />
+                </div>
+
+            </div>
+            <div>
+                <input type="submit" value="登录" />
+            </div>
+            <div>@ViewBag.Msg</div>
+        </form>
+    </div>
+</body>
+</html>

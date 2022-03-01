@@ -1,0 +1,45 @@
+﻿@using Student_Hostel.Models
+@model Dormitory
+<div class="container">
+    <h2>修改宿舍信息</h2>
+    <form action="edit" method="post">
+        <div class="form-group">
+            <div>
+                <input type="hidden" name="id" value="@Model.Id" />
+            </div>
+            <div>
+            <label for="DorName">寝室号:@Model.DorName</label>
+            <input type="hidden" class="form-control" name="DorName" value="@Model.DorName">
+        </div>
+            <div class="form-group">
+                <label for="NumPeople">几人间:</label>
+                <select class="select" name="NumPeople">
+                    @foreach (var item in Enum.GetNames(typeof(PeopleNumberName)))
+                    {
+                        if (item == Model.NumPeople)
+                        {
+                            <option value="@item " selected>@item</option>
+                        }
+                        else
+                        {
+                            <option value="@item ">@item</option>
+                        }
+
+                    }
+                </select>
+            </div>
+        <div class="form-group">
+            <label for="PeopleName">寝室成员:</label>
+            <input type="text" class="form-control" name="PeopleName" value="@Model.PeopleName">
+        </div>
+        <div class="form-group">
+            <label for="Remark">备注：</label>
+            <input type="text" class="form-control" name="Remark" value="@Model.Remark">
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">修改</button>
+        <label class="col-form-label">@ViewBag.Msg</label>
+</div>
+    </form>
+</div>

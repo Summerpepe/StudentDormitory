@@ -1,0 +1,86 @@
+CREATE TABLE [dbo].[Absence] (
+    [Id]          INT            IDENTITY (1, 1) NOT NULL,
+    [Name]        NVARCHAR (10)  NULL,
+    [Code]        NVARCHAR (12)  NOT NULL,
+    [DormitoryId] INT            NULL,
+    [Time]        DATETIME       NULL,
+    [Remark]      NVARCHAR (500) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Dormitory] (
+    [Id]         INT            IDENTITY (1, 1) NOT NULL,
+    [DorName]    NVARCHAR (50)  NULL,
+    [NumPeople]  NVARCHAR (50)  NULL,
+    [PeopleName] NVARCHAR (50)  NULL,
+    [Remark]     NVARCHAR (500) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[DormitoryHygiene] (
+    [Id]          INT            IDENTITY (1, 1) NOT NULL,
+    [Code]        NVARCHAR (50)  NULL,
+    [Time]        DATETIME       NULL,
+    [DormitoryId] INT            NULL,
+    [Remark]      NVARCHAR (500) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Leave] (
+    [Id]          INT            IDENTITY (1, 1) NOT NULL,
+    [Code]        NVARCHAR (12)  NULL,
+    [Name]        NVARCHAR (10)  NULL,
+    [Phone]       NVARCHAR (100) NULL,
+    [DormitoryId] INT            NULL,
+    [LeaveTime]   DATETIME       NULL,
+    [ReturnTime]  DATETIME       NULL,
+    [leaveReason] NVARCHAR (500) NULL,
+    [PhotoPath]   NVARCHAR (100) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Repair] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [Time]        DATETIME      NULL,
+    [DormitoryId] INT           NULL,
+    [Remark]      NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Student] (
+    [Id]             INT            IDENTITY (1, 1) NOT NULL,
+    [Code]           NVARCHAR (12)  NOT NULL,
+    [Name]           NVARCHAR (10)  NULL,
+    [Sex]            BIT            NULL,
+    [Birth]          DATETIME       NULL,
+    [Phone]          NVARCHAR (100) NULL,
+    [DepartmentName] NVARCHAR (50)  NULL,
+    [DormitoryId]    INT            NULL,
+    [Remark]         NVARCHAR (500) NULL,
+    [PhotoPath]      NVARCHAR (100) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[StuUser] (
+    [Id]               INT           IDENTITY (1, 1) NOT NULL,
+    [Code]             NVARCHAR (50) NULL,
+    [Name]             NVARCHAR (50) NULL,
+    [Pwd]              NVARCHAR (50) NULL,
+    [PasswordConfirm ] NVARCHAR (50) NULL
+);
+
+CREATE TABLE [dbo].[SysUser] (
+    [Id]              INT            IDENTITY (1, 1) NOT NULL,
+    [Code]            NVARCHAR (12)  NOT NULL,
+    [Name]            NVARCHAR (10)  NULL,
+    [Sex]             BIT            NULL,
+    [Phone]           NVARCHAR (100) NULL,
+    [Pwd]             NVARCHAR (100) NULL,
+    [PasswordConfirm] NVARCHAR (100) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+

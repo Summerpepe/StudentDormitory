@@ -1,0 +1,28 @@
+﻿@model SysUserDetail
+<div class="container">
+    <h2>显示管理员信息</h2>
+    @*<div>
+            @{
+                var photoPath = "/images/" + @Model.PhotoPath;
+            }
+            <img src="@photoPath" width="200" />
+        </div>*@
+    <div>
+        员工号：@Model.Code
+    </div>
+    <div>
+        姓名：@Model.Name
+    </div>
+    <div>
+        性别 ：@Model.Sex
+    </div>
+    <div>
+        电话：@Model.Phone
+    </div>
+    <div>
+        <div>
+            密码：@Model.Pwd
+        </div>
+    </div>
+    <a href="/Home/SysEdit">修改</a>
+</div>

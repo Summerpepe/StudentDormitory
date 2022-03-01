@@ -1,0 +1,32 @@
+﻿@model leaveIndexModel
+<div class="container">
+    <h2>请假详情</h2>
+    <div>
+        @{
+            var photoPath = "/images/" + @Model.PhotoPath;
+        }
+        <img src="@photoPath" width="200" />
+    </div>
+    <div>
+        学号：@Model.Code
+    </div>
+    <div>
+        姓名：@Model.Name
+    </div>
+    <div>
+        电话：@Model.Phone
+    </div>
+    <div>
+        寝室号：@Model.DormitoryName
+    </div>
+    <div>
+        请假时间：@Model.LeaveTime
+    </div>
+    <div>
+        返校时间：@Model.ReturnTime
+    </div>
+    <div>
+        请假原因：@Model.leaveReason
+    </div>
+    <a href="/Home/LeaveIndex">返回</a>
+</div>

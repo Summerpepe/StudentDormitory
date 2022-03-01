@@ -1,0 +1,99 @@
+﻿@{
+    Layout = null;
+}
+@model List<Dormitory>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/StuHome/AbsenceIndex">我的考勤</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/DorIndex">查看宿舍卫生</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍报修与查看</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddRepair">宿舍报修</a>
+                    <a class="dropdown-item" href="/StuHome/RepairIndex">报修查看</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">请假</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddLeave">请假</a>
+                    <a class="dropdown-item" href="/StuHome/MyLeave">我的请假</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">用户信息</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/StuDetails">查看用户</a>
+                    <a class="dropdown-item" href="/StuHome/StuEdit">修改密码</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout1">退出</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+<div class="container">
+    <h2>请假</h2>
+    <form enctype="multipart/form-data" action="Addleave" method="post">
+        <div class="form-group">
+            <label for="Code">学号:@ViewData["UserCode"]</label>
+            <input type="hidden" class="form-control" name="Code" value="@ViewData["UserCode"]">
+        </div>
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" class="form-control"  name="Name">
+        </div>
+        <div class="form-group">
+            <label for="departmentId">所在宿舍:</label>
+            <select class="select" name="DormitoryId">
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id">@item.DorName</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="phone">电话:</label>
+            <input type="text" class="form-control" name="Phone">
+        </div>
+        <div class="form-group">
+            <label for="LeaveTime ">请假时间:</label>
+            <input type="text" class="form-control" name="LeaveTime" value="" />
+        </div>
+        <div class="form-group">
+            <label for=" ReturnTime">返校时间:</label>
+            <input type="text" class="form-control" name="ReturnTime" value="" />
+        </div>
+        <div class="form-group">
+            <label for="leaveReason">请假原因:</label>
+            <input type="text" class="form-control" name="LeaveReason">
+        </div>
+        <div class="form-group">
+            <label for="PhotoPath">假条照片：</label>
+            <input type="file" class="form-control" name="photoPath">
+        </div>
+
+        <button type="submit" class="btn btn-primary">确认</button>
+        <label class="col-form-label">@ViewBag.Msg</label>
+    </form>
+</div>

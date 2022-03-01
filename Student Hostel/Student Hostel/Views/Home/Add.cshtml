@@ -1,0 +1,60 @@
+﻿@using Student_Hostel.Models
+@model List<Dormitory>
+<div class="container">
+    <h2>添加学生信息</h2>
+    <form enctype="multipart/form-data" action="add" method="post">
+        <div class="form-group">
+            <label for="id">学号:</label>
+            <input type="text" class="form-control" name="Code">
+        </div>
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" class="form-control"  name="Name">
+        </div>
+        <div class="form-group">
+            <label for="sex">性别:</label>
+            <input type="radio" name="sex" value="true" checked />男
+            <input type="radio" name="sex" value="false" />女
+        </div>
+        <div class="form-group">
+            <label for="birth">出生日期:</label>
+            <input type="text" class="form-control" name="Birth" value="" />
+        </div>
+        <div class="form-group">
+            <label for="email">电话:</label>
+            <input type="text" class="form-control" name="Phone">
+        </div>
+        <div class="form-group">
+            <label for="departmentId">楼号-宿舍号:</label>
+            <select class="select" name="DormitoryId">
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id">@item.DorName</option>
+                }
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="DormitoryId">学院：</label>
+            <select class="select" name="departmentname">
+                @foreach (var item in Enum.GetNames(typeof(DepartmentName)))
+                {
+                    <option value="@item">@item</option>
+
+                }
+                </select>
+</div>
+        <div class="form-group">
+            <label for="Remark">备注：</label>
+            <input type="text" class="form-control" name="Remark">
+        </div>
+        <div class="form-group">
+            <label for="PhotoPath">照片：</label>
+            <input type="file" class="form-control" name="photoPath">
+        </div>
+
+        <button type="submit" class="btn btn-primary">添加</button>
+        <span class="text-danger">@ViewBag.Msg</span>
+
+    </form>
+    </div>

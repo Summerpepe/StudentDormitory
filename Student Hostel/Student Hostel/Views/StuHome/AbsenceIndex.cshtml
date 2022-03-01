@@ -1,0 +1,93 @@
+﻿@{
+   Layout = null;
+}
+@model List<AbsenceDetailModels>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link " href="/StuHome/AbsenceIndex">我的考勤</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/DorIndex">查看宿舍卫生</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍报修与查看</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddRepair">宿舍报修</a>
+                    <a class="dropdown-item" href="/StuHome/RepairIndex">报修查看</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">请假</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddLeave">请假</a>
+                    <a class="dropdown-item" href="/StuHome/MyLeave">我的请假</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">用户信息</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/StuDetails">查看用户</a>
+                    <a class="dropdown-item" href="/StuHome/StuEdit">修改密码</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout1">退出</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+<div class="container">
+    <form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>寝室号</th>
+                    <th>晚归时间</th>
+                    <th>晚归原因</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model)
+                {
+                    <tr>
+                        <td>@student.Id</td>
+                        <td>@student.Code</td>
+                        <td>@student.Name</td>
+                        <th>@student.DormitoryName</th>
+                        <td>@student.Time</td>
+                        <td>@student.Remark</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="StuHome" asp-action="AbsenceIndex" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="StuHome" asp-action="AbsenceIndex" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="StuHome" asp-action="AbsenceIndex" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="StuHome" asp-action="AbsenceIndex" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+        <div>
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+
+    </form>
+</div>
+

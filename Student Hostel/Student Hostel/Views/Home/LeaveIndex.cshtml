@@ -1,0 +1,53 @@
+﻿@model List<leaveIndexModel>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form method="post" action="LeaveSearch">
+            <input type="text" placeholder="Enter StudentCode" name="SearchString" />
+            <input type="submit" value="Search" />
+        </form>
+    </nav>
+    <div>
+        <table class="table">
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>电话</th>
+                    <th>寝室号</th>
+                    <th>请假时间</th>
+                    <th>返校时间</th>
+                    <th>请假原因</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var leave in Model)
+                {
+                    <tr>
+                        <td>@leave.Id</td>
+                        <td>@leave.Code</td>
+                        <td>@leave.Name</td>
+                        <td>@leave.Phone</td>
+                        <th>@leave.DormitoryName</th>
+                        <td>@leave.LeaveTime</td>
+                        <td>@leave.ReturnTime</td>
+                        <td>@leave.leaveReason</td>
+                        <td>
+                            <a href="/home/LeaveDetails/@leave.Id">查看</a>
+                            <a href="/home/LeaveDelete/@leave.Id" onclick="javascrip: return confirm('删除吗?')">删除</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="home" asp-action="LeaveIndex" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="home" asp-action="LeaveIndex" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="home" asp-action="LeaveIndex" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="home" asp-action="LeaveIndex" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+        <div>
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+    </div>
+</div>

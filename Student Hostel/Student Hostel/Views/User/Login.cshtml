@@ -1,0 +1,105 @@
+﻿@{ 
+    Layout = null;
+}
+@model SysUser
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/images/gongyu5.jpg">
+                    <div class="carousel-caption">
+                        <h1>欢迎登陆学生宿舍管理系统</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/gongyu4.jpg">
+                    <div class="carousel-caption">
+                        <h1>欢迎登陆学生宿舍管理系统</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="~/images/gongyu3.jpg">
+                    <div class="carousel-caption">
+                        <h1>欢迎登陆学生宿舍管理系统</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+
+
+    <div class="container">
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" href="/User/Login">管理员登陆</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/User/StuLogin">学生登陆</a>
+            </li>
+        </ul>
+        <form name="from1" action="" method="post">
+            <div class="form-group">
+                <label for="Code">员工号:</label>
+                <input type="text" class="form-control" name="Code" value="@Model.Code">
+            </div>
+            <div class="form-group">
+                <label for="usr">姓名:</label>
+                <input type="text" class="form-control" name="Name" value="@Model.Name">
+            </div>
+            <div class="form-group">
+                <label for="pwd">密码:</label>
+                <input type="password" class="form-control" name="pwd" value="@Model.Pwd">
+            </div>
+            <div class="form-group">
+                <label>  验证码:</label>
+                <input type="text" name="validateCode" id="validateCode" maxlength="6" />
+                <img id="CheckNumber" name="CheckNumber" src="/User/ValidateCode" alt="看不清？点击更换" onclick="this.src=this.src+'?'" width="60px" height="28px" />
+            </div>
+            <br />
+            <div>
+                <button type="submit" class="btn btn-outline-primary">登陆</button>
+                <a href="/user/manregister">管理员注册</a>
+                <span  class="text-danger">@ViewBag.Msg</span>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

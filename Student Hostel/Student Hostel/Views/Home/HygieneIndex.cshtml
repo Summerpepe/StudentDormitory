@@ -1,0 +1,50 @@
+﻿@model List<DormitoryHygieneModels>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form method="post" action="HygieneSearch">
+            <input type="text" placeholder="Enter DormitoryName" name="SearchString" />
+            <input type="submit" value="Search" />
+            <span class="text-danger">@ViewBag.Msg</span>
+        </form>
+    </nav>
+    <form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>员工号</th>
+                    <th>检查时间</th>
+                    <th>寝室号</th>
+                    <th>评分</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var Hygiene in Model)
+                {
+                    <tr>
+                        <td>@Hygiene.Id</td>
+                        <td>@Hygiene.Code</td>
+                        <td>@Hygiene.Time</td>
+                        <td>@Hygiene.DormitoryName</td>
+                        <td>@Hygiene.Remark</td>
+                        <td>
+                            <a href="/home/hygienedelete/@Hygiene.Id" onclick="javascrip: return confirm('删除吗?')">删除</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="Home" asp-action="HygieneIndex" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="Home" asp-action="HygieneIndex" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="Home" asp-action="HygieneIndex" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="Home" asp-action="HygieneIndex" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+        <div>
+
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+
+    </form>
+</div>
+

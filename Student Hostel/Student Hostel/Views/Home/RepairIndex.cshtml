@@ -1,0 +1,46 @@
+﻿@model List<RepairIndexModel>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form method="post" action="RepairSearch">
+            <input type="text" placeholder="Enter DormitoryName" name="SearchString" />
+            <input type="submit" value="Search" />
+            <label class="text-danger">@ViewBag.Msg</label>
+        </form>
+    </nav>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>报修宿舍</th>
+                    <th>报修时间</th>
+                    <th>报修项目</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var repair in Model)
+                {
+                    <tr>
+                        <td>@repair.Id</td>
+                        <th>@repair.DormitoryName</th>
+                        <td>@repair.Time</td>
+                        <td>@repair.Remark</td>
+                        <td>
+                            <a href="/Home/RepairDetails/@repair.Id">查看</a>
+                            <a href="/Home/RepairDelete/@repair.Id" onclick="javascrip: return confirm('删除吗?')">删除</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="Home" asp-action="RepairIndex" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="Home" asp-action="RepairIndex" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="Home" asp-action="RepairIndex" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="Home" asp-action="RepairIndex" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+        <div>
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+    </div>
+</div>
+

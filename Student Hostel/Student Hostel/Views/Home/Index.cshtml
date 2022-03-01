@@ -1,0 +1,57 @@
+﻿@model List<StudentDetail>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form method="post" action="Search">
+            <input type="text"  placeholder="Enter StudentCode" name="SearchString" />
+            <input type="submit" value="Search" />
+        </form>
+    </nav>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>寝室号</th>
+                    <th>出生日期</th>
+                    <th>电话</th>
+                    <th>学院</th>
+                    <th>备注</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model)
+                {
+                    <tr>
+                        <td>@student.Id</td>
+                        <td>@student.Code</td>
+                        <td>@student.Name</td>
+                        <td>@student.Sex</td>
+                        <th>@student.DormitoryName</th>
+                        <td>@student.Birth</td>
+                        <td>@student.Phone</td>
+                        <td>@student.DepartmentName</td>
+                        <td>@student.Remark</td>
+                        <td>
+                            <a href="/home/details/@student.Id">查看</a>
+                            <a href="/home/edit/@student.Id">编辑</a>
+                            <a href="/home/delete/@student.Id" onclick="javascrip: return confirm('删除吗?')">删除</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="home" asp-action="index" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="home" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="home" asp-action="index" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="home" asp-action="index" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+
+        <div>
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+    </div>
+    </div>
+

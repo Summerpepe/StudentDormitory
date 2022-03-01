@@ -1,0 +1,35 @@
+﻿
+<div class="container">
+    <form action="Add" method="post">
+        <div>
+            <div>
+                <label>寝室号:</label>
+                <input type="text" name="DorName" />
+            </div>
+            <div>
+                <label>几人间:</label>
+                <select class="select" name="NumPeople">
+                    @foreach (var item in Enum.GetNames(typeof(PeopleNumberName)))
+                    {
+                        <option value="@item">@item</option>
+
+                    }
+                </select>
+            </div>
+            <div>
+                <label>寝室成员:</label>
+                <input type="text" name="PeopleName" />
+            </div>
+            <div>
+                <label>备注:</label>
+                <input type="text" name ="remark" />
+            </div>
+            <div>
+                <input type="submit" value="添加" />
+            </div>
+        </div>
+        <div>@ViewBag.Msg</div>
+    </form>
+</div>
+
+

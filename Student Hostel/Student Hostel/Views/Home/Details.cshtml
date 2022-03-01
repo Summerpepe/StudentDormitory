@@ -1,0 +1,39 @@
+﻿@model StudentDetail
+<div class="container">
+    <h2>显示学生信息</h2>
+    <div>
+        @{
+            var photoPath = "/images/" + @Model.PhotoPath;
+        }
+        <img src="@photoPath" width="200" />
+    </div>
+    <div>
+        学号：@Model.Code
+    </div>
+    <div>
+        姓名：@Model.Name
+    </div>
+    <div>
+        性别 ：@Model.Sex
+    </div>
+    <div>
+        寝室号：@Model.DormitoryName
+    </div>
+    <div>
+        出生日期：@Model.Birth
+    </div>
+    <div>
+        电话：@Model.Phone
+    </div>
+    <div>
+        学院：@Model.DepartmentName
+    </div>
+    <div>
+        备注：@Model.Remark
+    </div>
+    <div>
+        <a href="/Home/Index">返回</a>
+    </div>
+
+
+</div>

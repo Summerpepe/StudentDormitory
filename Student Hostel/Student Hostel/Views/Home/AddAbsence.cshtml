@@ -1,0 +1,35 @@
+﻿
+<div class="container">
+    <h2>缺勤登记</h2>
+    <form enctype="multipart/form-data" action="addabsence" method="post">
+        <div class="form-group">
+            <label for="code">学号:</label>
+            <input type="text" class="form-control" name="Code">
+        </div>
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" class="form-control" name="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="DormitoryId">楼号-宿舍号:</label>
+            <select class="select" name="DormitoryId">
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Id">@item.DorName</option>
+                }
+            </select>
+            <div class="form-group">
+                <label for="birth">晚归时间:</label>
+                <input type="text" class="form-control" name="time" value="" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Remark">晚归原因：</label>
+            <input type="text" class="form-control" name="Remark">
+        </div>
+        <button type="submit" class="btn btn-primary">添加</button>
+        <label class="col-form-label">@ViewBag.Msg</label>
+
+    </form>
+</div>

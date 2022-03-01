@@ -1,0 +1,101 @@
+﻿@{
+    Layout = null;
+}}
+@model List<leaveIndexModel>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/StuHome/AbsenceIndex">我的考勤</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/StuHome/DorIndex">查看宿舍卫生</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍报修与查看</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddRepair">宿舍报修</a>
+                    <a class="dropdown-item" href="/StuHome/RepairIndex">报修查看</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">请假</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/AddLeave">请假</a>
+                    <a class="dropdown-item" href="/StuHome/MyLeave">我的请假</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">用户信息</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/StuHome/StuDetails">查看用户</a>
+                    <a class="dropdown-item" href="/StuHome/StuEdit">修改密码</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/user/logout1">退出</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<div class="container">
+    <div>
+        <table class="table">
+            <thead>
+
+                <tr>
+                    <th>ID</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>电话</th>
+                    <th>寝室号</th>
+                    <th>请假时间</th>
+                    <th>返校时间</th>
+                    <th>请假原因</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var leave in Model)
+                {
+                    <tr>
+                        <td>@leave.Id</td>
+                        <td>@leave.Code</td>
+                        <td>@leave.Name</td>
+                        <td>@leave.Phone</td>
+                        <th>@leave.DormitoryName</th>
+                        <td>@leave.LeaveTime</td>
+                        <td>@leave.ReturnTime</td>
+                        <td>@leave.leaveReason</td>
+                        <td>
+                            <a href="/StuHome/LeaveDelete/@leave.Id" onclick="javascrip: return confirm('撤回吗?')">撤回</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <a asp-controller="StuHome" asp-action="MyLeave" asp-route-pageIndex="1">首页</a>
+        <a asp-controller="StuHome" asp-action="MyLeave" asp-route-pageIndex="@(ViewBag.pageIndex-1 < 1 ? 1 : ViewBag.pageIndex-1)">上一页</a>
+        <a asp-controller="StuHome" asp-action="MyLeave" asp-route-pageIndex="@(ViewBag.pageIndex+1 > ViewBag.totalPage ? ViewBag.totalPage:ViewBag.pageIndex+1)">下一页</a>
+        <a asp-controller="StuHome" asp-action="MyLeave" asp-route-pageIndex="@ViewBag.totalPage">末页</a>
+        <div>
+            <label class="text-danger">@ViewBag.Msg </label>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+           <h2 class="text-center">学生宿舍管理系统</h2>
+            <div>
+                <img src="~/images/gongyu12.jpg" />
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link " href="/Home/index">学生列表</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/Add">添加学生</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">宿舍卫生与考勤</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Home/AddHygiene">宿舍卫生登记</a>
+                        <a class="dropdown-item" href="/Home/HygieneIndex">宿舍卫生查看</a>
+                        <a class="dropdown-item" href="/Home/AddAbsence">缺勤登记</a>
+                        <a class="dropdown-item" href="/Home/AbsenceIndex">缺勤查看</a>
+
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Dor/index">宿舍信息</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Dor/Add">添加宿舍</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/RepairIndex">宿舍报修情况</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home/LeaveIndex">请假消息</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">个人管理</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Home/SysDetails/">查看个人信息</a>
+                        <a class="dropdown-item" href="/Home/SysEdit">修改信息</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/logout">退出</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            @RenderBody()
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+﻿@using Student_Hostel.ViewModels
+@model StudentEditModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/StuHome/index">查看个人信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">考勤情况</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">查看宿舍信息</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">宿舍报修</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">请假</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+<div class="container">
+    <h2>修改学生信息</h2>
+    <form action="add" method="post">
+        <div class="form-group">
+            <div>
+                <input type="hidden" name="id" value="@Model.student.Id" />
+            </div>
+            <label for="id">学号:</label>
+            <input type="text" class="form-control" placeholder="Enter Code" name="Code" value="@Model.student.Code">
+        </div>
+        <div class="form-group">
+            <label for="name">姓名:</label>
+            <input type="text" class="form-control" placeholder="Enter Name" name="Name" value="@Model.student.Name">
+        </div>
+        <div class="form-group">
+            <label for="sex">性别:</label>
+            @if (Model.student.Sex)
+            {
+                <input type="radio" name="sex" value="true" checked />@:男
+                <input type="radio" name="sex" value="false" />@:女
+
+            }
+            else
+            {
+                <input type="radio" name="sex" value="true" />@:男
+                <input type="radio" name="sex" value="false" checked />@:女
+            }
+        </div>
+        <div class="form-group">
+            <label for="birth">出生日期:</label>
+            <input type="text" class="form-control" name="Birth" value="@Model.student.Birth" />
+        </div>
+        <div class="form-group">
+            <label for="email">电话:</label>
+            <input type="text" class="form-control" name="Phone" value="@Model.student.Phone">
+        </div>
+        <div class="form-group">
+            <label for="departmentId">宿舍号:</label>
+            <select class="select" name="DormitoryId">
+                @foreach (var item in Model.Dormitories)
+                {
+                    if (item.Id == @Model.student.DormitoryId)
+                    {
+
+                        <option value="@item.Id" selected>@item.DorName</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Id">@item.DorName</option>
+                    }
+                }
+            </select>
+
+        </div>
+        <div class="form-group">
+            <label for="DormitoryId">学院：</label>
+            <input type="text" class="form-control" name="DepartmentName" value="@Model.student.DepartmentName">
+        </div>
+        <div class="form-group">
+            <label for="Remark">备注：</label>
+            <input type="text" class="form-control" name="Remark" value="@Model.student.Id">
+        </div>
+
+        <button type="submit" class="btn btn-primary">修改</button>
+        <label class="col-form-label">@ViewBag.Msg</label>
+
+    </form>
+</div>
+
